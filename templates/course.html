@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Courses Hero -->
+<section class="courses-hero">
+    <div class="container">
+        <h1>Our Courses</h1>
+        <p>Choose Your Path to Success</p>
+    </div>
+</section>
+
+<!-- Courses Content -->
+<section class="courses-content">
+    <div class="container">
+        <p class="courses-intro">
+            NIPS College offers a variety of IT and Management courses designed to meet industry requirements and career aspirations. Each course is structured to provide both theoretical knowledge and practical skills.
+        </p>
+
+        <div class="courses-grid">
+            {% for course in courses %}
+            <div class="course-card-detailed" id="{{ course.title|lower|replace(' ', '-')|replace('(', '')|replace(')', '') }}">
+                <div class="course-card-header">
+                    <h3>{{ course.title }}</h3>
+                    <span class="course-duration"><i class="fas fa-clock"></i> {{ course.duration }}</span>
+                </div>
+                <div class="course-card-body">
+                    <p class="course-description">{{ course.description }}</p>
+                    <div class="course-details">
+                        <p><strong>{{ course.details }}</strong></p>
+                    </div>
+                    <div class="course-highlights">
+                        <h4>Course Highlights:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Expert faculty members</li>
+                            <li><i class="fas fa-check"></i> Practical hands-on training</li>
+                            <li><i class="fas fa-check"></i> Industry-recognized certification</li>
+                            <li><i class="fas fa-check"></i> Job placement assistance</li>
+                            <li><i class="fas fa-check"></i> Flexible learning options</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-card-footer">
+                    <button class="enquire-btn-course" onclick="openEnquiryForm(event, '{{ course.title }}')">
+                        <i class="fas fa-paper-plane"></i> Enquire Now
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Course Comparison -->
+        <div class="course-comparison">
+            <h2>Course Comparison</h2>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Duration</th>
+                            <th>Level</th>
+                            <th>Eligibility</th>
+                            <th>Career Path</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>O Level (DOEACC)</strong></td>
+                            <td>1 Year</td>
+                            <td>Foundation</td>
+                            <td>Class 10 Pass</td>
+                            <td>Computer Operator, Data Entry</td>
+                        </tr>
+                        <tr>
+                            <td><strong>COPA (NCVT)</strong></td>
+                            <td>6 Months</td>
+                            <td>Entry Level</td>
+                            <td>Class 10 Pass</td>
+                            <td>System Administrator, Help Desk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PGDCA</strong></td>
+                            <td>1 Year</td>
+                            <td>Post-Graduate</td>
+                            <td>Bachelor Degree</td>
+                            <td>Application Developer, Analyst</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BCA</strong></td>
+                            <td>3 Years</td>
+                            <td>Undergraduate</td>
+                            <td>Class 12 Pass</td>
+                            <td>Software Developer, IT Professional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MCA</strong></td>
+                            <td>2 Years</td>
+                            <td>Post-Graduate</td>
+                            <td>Bachelor Degree</td>
+                            <td>Software Engineer, Project Manager</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Admission Process -->
+        <div class="admission-process">
+            <h2>Admission Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Register</h4>
+                    <p>Fill the enquiry form with your details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Counseling</h4>
+                    <p>Meet our counselors to discuss courses</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Documentation</h4>
+                    <p>Submit required documents and fees</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Enrollment</h4>
+                    <p>Begin your learning journey with us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Choose Your Course Today</h2>
+        <p>Start your journey towards a successful IT career</p>
+        <button class="cta-button cta-button-large" onclick="openEnquiryForm(event)">
+            <i class="fas fa-rocket"></i> Get More Information
+        </button>
+    </div>
+</section>
+{% endblock %}
