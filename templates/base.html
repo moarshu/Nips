@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NIPS College of IT & Management - Quality Education in Information Technology and Management">
+    <meta name="keywords" content="NIPS College, IT Education, Computer Science, Programming, BCA, MCA, PGDCA">
+    <title>{% block title %}NIPS College of IT & Management{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>NIPS College</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">Home</a></li>
+                <li><a href="/about" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}">About</a></li>
+                <li><a href="/courses" class="nav-link {% if request.endpoint == 'courses' %}active{% endif %}">Courses</a></li>
+                <li><a href="/contact" class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}">Contact</a></li>
+                <li><a href="#" class="nav-link enquire-btn" onclick="openEnquiryForm(event)">Enquire Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>NIPS College</h3>
+                <p>Providing Quality Education in IT & Management</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Courses</h4>
+                <ul>
+                    <li><a href="/courses#o-level">O Level (DOEACC)</a></li>
+                    <li><a href="/courses#copa">COPA (NCVT)</a></li>
+                    <li><a href="/courses#pgdca">PGDCA</a></li>
+                    <li><a href="/courses#bca">BCA</a></li>
+                    <li><a href="/courses#mca">MCA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                <p><i class="fas fa-envelope"></i> info@nipscollege.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Your College Address</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NIPS College of IT & Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enquiry Modal -->
+    {% include 'enquiry_modal.html' %}
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
