@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Hero -->
+<section class="about-hero">
+    <div class="container">
+        <h1>About NIPS College</h1>
+        <p>Excellence in Education, Dedication to Your Success</p>
+    </div>
+</section>
+
+<!-- Main About Content -->
+<section class="about-content">
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                NIPS College of IT & Management was established with a vision to provide quality, affordable, and industry-relevant education in Information Technology and Management. Over the years, we have successfully trained thousands of students who are now contributing significantly to the IT industry across India and globally.
+            </p>
+            <p>
+                Our college is committed to fostering an environment where students can develop both technical and soft skills, preparing them for the competitive job market while maintaining the highest standards of academic excellence.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                To provide world-class education in Information Technology and Management, empowering students with knowledge, skills, and values necessary to contribute positively to society while building successful careers.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Vision</h2>
+            <p>
+                To be a leading institution in IT and Management education, recognized for academic excellence, industry collaboration, and producing globally competitive professionals who drive innovation and growth.
+            </p>
+        </div>
+
+        <div class="stats-section">
+            <h2>Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>5000+</h3>
+                    <p>Students Graduated</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Placement Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Partner Companies</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Encouraging creative thinking and modern approaches to problem-solving</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Integrity</h3>
+                    <p>Maintaining highest ethical standards in education and conduct</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Excellence</h3>
+                    <p>Pursuing perfection in all aspects of our educational delivery</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Collaboration</h3>
+                    <p>Fostering teamwork and mutual respect among all stakeholders</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Why NIPS College?</h2>
+            <div class="reasons-list">
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> Industry-Experienced Faculty</h3>
+                    <p>Our instructors bring real-world experience from leading IT companies, ensuring practical and relevant training.</p>
+                </div>
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> State-of-the-Art Facilities</h3>
+                    <p>Modern computer labs, classrooms with latest technology, and a well-stocked library.</p>
+                </div>
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> Strong Industry Partnerships</h3>
+                    <p>Collaboration with top IT companies for internships, projects, and placements.</p>
+                </div>
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> Comprehensive Training</h3>
+                    <p>Beyond technical skills, we emphasize communication, leadership, and professional development.</p>
+                </div>
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> Dedicated Placement Cell</h3>
+                    <p>Comprehensive career guidance and active recruitment drives throughout the year.</p>
+                </div>
+                <div class="reason-item">
+                    <h3><i class="fas fa-check-circle"></i> Flexible Learning Options</h3>
+                    <p>Choose between full-time, part-time, or online modes based on your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+    <div class="container">
+        <h2 class="section-title">Our Leadership</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i class="fas fa-user"></i></div>
+                <h3>Dr. Rajesh Verma</h3>
+                <p>Principal & Director</p>
+                <p class="member-bio">Ph.D. in Computer Science with 25+ years of educational experience.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><i class="fas fa-user"></i></div>
+                <h3>Prof. Priya Singh</h3>
+                <p>Head of Academics</p>
+                <p class="member-bio">M.Tech in Computer Science, Specialization in Web Technologies.</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i class="fas fa-user"></i></div>
+                <h3>Mr. Arun Kumar</h3>
+                <p>Placement Director</p>
+                <p class="member-bio">MBA in Human Resources, Strong industry connections.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Join Our Community</h2>
+        <p>Be a part of NIPS College and transform your future</p>
+        <button class="cta-button cta-button-large" onclick="openEnquiryForm(event)">
+            <i class="fas fa-rocket"></i> Enquire Now
+        </button>
+    </div>
+</section>
+{% endblock %}
