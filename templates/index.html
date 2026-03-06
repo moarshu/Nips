@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome to NIPS College</h1>
+        <p class="hero-subtitle">Excellence in IT & Management Education</p>
+        <p class="hero-description">Shaping Careers, Building Futures - Your Gateway to Professional Success</p>
+        <button class="cta-button" onclick="openEnquiryForm(event)">
+            <i class="fas fa-paper-plane"></i> Enquire Now
+        </button>
+    </div>
+    <div class="hero-background"></div>
+</section>
+
+<!-- About Summary Section -->
+<section class="about-summary">
+    <div class="container">
+        <h2 class="section-title">About NIPS College</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-book"></i>
+                <h3>Quality Education</h3>
+                <p>Comprehensive curriculum designed by industry experts to meet current market demands.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-users"></i>
+                <h3>Expert Faculty</h3>
+                <p>Experienced educators with real-world industry experience guiding students.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Modern Facilities</h3>
+                <p>State-of-the-art computer labs and infrastructure for hands-on learning.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Job Placement</h3>
+                <p>Strong industry connections ensuring excellent career opportunities for graduates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Courses Section -->
+<section class="popular-courses">
+    <div class="container">
+        <h2 class="section-title">Popular Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <h3>O Level (DOEACC)</h3>
+                <p class="course-duration"><i class="fas fa-clock"></i> 1 Year</p>
+                <p>Foundation level course introducing basic IT concepts and office applications.</p>
+                <button class="enquire-btn-small" onclick="openEnquiryForm(event, 'O Level (DOEACC)')">
+                    Enquire Now
+                </button>
+            </div>
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+                <h3>COPA (NCVT)</h3>
+                <p class="course-duration"><i class="fas fa-clock"></i> 6 Months</p>
+                <p>Practical skill-based training for computer operators and programming assistants.</p>
+                <button class="enquire-btn-small" onclick="openEnquiryForm(event, 'COPA (NCVT)')">
+                    Enquire Now
+                </button>
+            </div>
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>PGDCA</h3>
+                <p class="course-duration"><i class="fas fa-clock"></i> 1 Year</p>
+                <p>Post Graduate Diploma in Computer Applications for graduates.</p>
+                <button class="enquire-btn-small" onclick="openEnquiryForm(event, 'PGDCA')">
+                    Enquire Now
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <h2 class="section-title">Why Choose NIPS College?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-number">01</div>
+                <h3>Industry-Aligned Curriculum</h3>
+                <p>Our courses are regularly updated to match industry standards and market demands.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-number">02</div>
+                <h3>Experienced Instructors</h3>
+                <p>Learn from professionals who have worked in leading IT companies and organizations.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-number">03</div>
+                <h3>Hands-On Training</h3>
+                <p>Practical projects and real-world scenarios prepare you for professional challenges.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-number">04</div>
+                <h3>Certification Programs</h3>
+                <p>Earn recognized certifications that boost your career prospects globally.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-number">05</div>
+                <h3>Career Support</h3>
+                <p>Dedicated placement cell assisting graduates in securing suitable positions.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-number">06</div>
+                <h3>Flexible Learning</h3>
+                <p>Choose between full-time and part-time options to suit your schedule.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Student Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Student Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "NIPS College provided me with exceptional training and placement support. I'm now working at a leading IT company with a great salary package!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div>
+                        <p class="author-name">Rajesh Kumar</p>
+                        <p class="author-course">BCA Graduate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "The faculty members are extremely knowledgeable and supportive. They helped me develop practical skills that are directly applicable in the industry."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PS</div>
+                    <div>
+                        <p class="author-name">Priya Sharma</p>
+                        <p class="author-course">PGDCA Graduate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "NIPS College offered me a flexible schedule along with excellent quality education. The placement team worked hard to get me placed immediately after graduation."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AK</div>
+                    <div>
+                        <p class="author-name">Amit Khanna</p>
+                        <p class="author-course">MCA Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join thousands of successful graduates from NIPS College</p>
+        <button class="cta-button cta-button-large" onclick="openEnquiryForm(event)">
+            <i class="fas fa-rocket"></i> Enquire Now
+        </button>
+    </div>
+</section>
+{% endblock %}
