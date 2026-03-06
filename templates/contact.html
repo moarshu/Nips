@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Contact Hero -->
+<section class="contact-hero">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Contact us for any queries or information.</p>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>NIPS College of IT & Management<br>
+                           123, Education Street<br>
+                           City, State - 12345<br>
+                           India</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>Main: +91 XXXXX XXXXX<br>
+                           Admission: +91 XXXXX XXXXX<br>
+                           Support: +91 XXXXX XXXXX</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>General: info@nipscollege.com<br>
+                           Admissions: admissions@nipscollege.com<br>
+                           Support: support@nipscollege.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                           Saturday: 10:00 AM - 4:00 PM<br>
+                           Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.123456789!2d77.123!3d28.456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI3JzIxLjYiTiA3N8K3MDcnMjYuMiJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" required placeholder="Your Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone" required placeholder="Your Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" required placeholder="Message Subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" required placeholder="Your Message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <div id="contactFormMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> When do admissions start?</h3>
+                    <p>Admissions are open throughout the year. You can apply anytime based on your convenience and the course availability. Contact our admission team for specific intake dates.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What is the fee structure?</h3>
+                    <p>Our fee structure is competitive and reasonable. Fees vary based on the course you choose. We offer flexible payment options and scholarships for deserving candidates.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do you provide placement assistance?</h3>
+                    <p>Yes, our dedicated placement cell provides comprehensive job placement assistance. We have partnerships with leading IT companies across India.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I pursue part-time courses?</h3>
+                    <p>Yes, we offer both full-time and part-time options for most of our courses. This flexibility allows working professionals to upskill without leaving their jobs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What about hostel facilities?</h3>
+                    <p>We have hostel facilities available for outstation students. Separate hostels for boys and girls with all modern amenities are provided.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How can I get a scholarship?</h3>
+                    <p>We offer merit-based and need-based scholarships. Contact our admissions office for eligibility criteria and application process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ready to Join NIPS College?</h2>
+        <p>Fill the enquiry form to get more information about our courses</p>
+        <button class="cta-button cta-button-large" onclick="openEnquiryForm(event)">
+            <i class="fas fa-rocket"></i> Enquire Now
+        </button>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        name: document.getElementById('contactName').value,
+        email: document.getElementById('contactEmail').value,
+        phone: document.getElementById('contactPhone').value,
+        subject: document.getElementById('contactSubject').value,
+        message: document.getElementById('contactMessage').value
+    };
+
+    // You can send this data to your backend or email service
+    console.log('Contact form data:', formData);
+    
+    const messageDiv = document.getElementById('contactForm
